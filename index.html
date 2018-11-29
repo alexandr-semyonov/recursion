@@ -7,6 +7,16 @@
     <title>Recursion</title>
 </head>
 <body>
-    <script src="main.js"></script>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <button v-on:click="showGetSum">sumTo(3)</button>
+        <button v-on:click="showGetFactorialFive">getFactorial(5)</button>
+        <button v-on:click="showFibonacciNumberMinus8">getFibonacciNumber(-8)</button>
+        <button v-on:click="showFibonacciNumber3()">getFibonacciNumber(3)</button>
+        <button v-on:click="clearResult()">Clear</button>
+        <p>{{ message }}</p>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="main.js"></script>
 </body>
 </html>
